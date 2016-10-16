@@ -12,12 +12,18 @@ import '!file?name=[name].[ext]!./manifest.json';
 import 'file?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved */
 
+// Animate.css
+import '!!style-loader!css-loader!../node_modules/animate.css/animate.min.css';
+import '!!style-loader!css-loader!../node_modules/slick-carousel/slick/slick.css';
+import '!!style-loader!css-loader!../node_modules/slick-carousel/slick/slick-theme.css';
+
 // Import all the third party stuff
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
+import FontFaceObserver from 'fontfaceobserver';
 import useScroll from 'react-router-scroll';
 import LanguageProvider from 'containers/LanguageProvider';
 import configureStore from './store';
@@ -27,6 +33,18 @@ import { translationMessages } from './i18n';
 
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
 import 'sanitize.css/sanitize.css';
+
+import styles from 'containers/App/styles.css';
+
+const WorkSansObserver = new FontFaceObserver('Work Sans', {});
+
+// When Work Sans is loaded, add a font-family
+WorkSansObserver.load().then(() => {
+  document.body.classList.add(styles.WorkSansLoaded);
+}, () => {
+  document.body.classList.remove(styles.WorkSansLoaded);
+});
+
 
 // Create redux store with history
 // this uses the singleton browserHistory provided by react-router

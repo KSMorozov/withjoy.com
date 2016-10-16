@@ -1,0 +1,87 @@
+.rsvps {
+  text-align: center;
+}
+
+.callout {
+  & h1 {
+    letter-spacing: -0.1rem;
+    color: #212121;
+  }
+
+  & p {
+    text-align: center;
+    opacity: 0.9;
+    color: #616161;
+  }
+}
+
+.gallery-image {
+  width: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 280px;
+}
+
+.first-row .gallery-image:nth-child(1) {
+  background-image: url(https://withjoy.com/assets/img/joy-announcement.png);
+}
+
+.first-row .gallery-image:nth-child(2) {
+  background-image: url(https://withjoy.com/assets/img/joy-rsvp-admin.png);
+}
+
+.first-row .gallery-image:nth-child(3) {
+  background-image: url(https://withjoy.com/assets/img/joy-unplugged.png);
+}
+
+.second-row .gallery-image:nth-child(1) {
+  background-image: url(https://withjoy.com/assets/img/joy-web-rsvp.jpg);
+}
+
+.second-row .gallery-image:nth-child(2) {
+  background-image: url(https://withjoy.com/assets/img/joy-guests.jpg);
+}
+
+.second-row .gallery-image:nth-child(3) {
+  background-image: url(https://withjoy.com/assets/img/joy-travel.png);
+}
+
+@media (min-width: 768px) {
+  .gallery-image {
+    width: 33.33333333%;
+    float: left;
+  }
+}
+
+.features {
+  padding: 20px 0;
+}
+
+.feature {
+  padding: 0 60px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+
+  & h4 {
+    color: #212121;
+    font-weight: 300;
+  }
+
+  & p {
+    color: #616161;
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 992px) {
+  .features {
+    padding: 20px 0 50px;
+  }
+
+  .feature {
+    margin-top: 30px;
+  }
+}

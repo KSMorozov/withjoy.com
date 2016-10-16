@@ -1,0 +1,98 @@
+.story {
+  padding-top: 0;
+  text-align: center;
+}
+
+.story-callout {
+  & h6 {
+    text-transform: uppercase;
+    color: #424242;
+  }
+
+  & h1 {
+    color: #424242;
+  }
+}
+
+.story-tale {
+  & p {
+    color: #616161;
+    text-align: center;
+    letter-spacing: 0.0125rem;
+    opacity: 0.9;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.story-tale-features {
+  margin-top: 3rem;
+}
+
+.story-tale-features-feature {
+  padding: 20px 30px;
+
+  & img {
+    margin-bottom: 1.5rem;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  & h3 {
+    color: #212121;
+    font-weight: 200;
+  }
+
+  & p {
+    opacity: 0.9;
+    color: #424242;
+    letter-spacing: 0.0125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .story-tale-features-feature {
+    & img {
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+.feature-image-fix {
+  margin-bottom: 1.5rem;
+}
+
+.feature-image-blend {
+  opacity: 0.87;
+}
+
+@media (min-width: 768px) {
+  .feature-image-fix {
+    margin-bottom: 2.25rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-image-fix {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-image-fix {
+    margin-bottom: 2.625rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .feature-image-fix {
+    margin-bottom: 2.425rem !important;
+  }
+}

@@ -4,6 +4,10 @@
  * App container styles
  */
 
-.container {
-  display: block;
+:global body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.WorkSansLoaded {
+  font-family: 'Work Sans', sans-serif;
 }

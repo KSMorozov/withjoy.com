@@ -10,16 +10,31 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Announcement from 'containers/Announcement';
+import HappyPeople from 'containers/HappyPeople';
+import Memories from 'containers/Memories';
+import Contacts from 'containers/Contacts';
+import Header from 'containers/Header';
+import People from 'containers/People';
+import Footer from 'containers/Footer';
+import Story from 'containers/Story';
+import RSVPs from 'containers/RSVPs';
+
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div className="stage">
+        <Header />
+        <Story />
+        <Announcement />
+        <RSVPs />
+        <People />
+        <Memories />
+        <HappyPeople />
+        <Contacts />
+        <Footer />
+      </div>
     );
   }
 }

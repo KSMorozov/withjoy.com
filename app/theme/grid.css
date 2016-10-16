@@ -1,0 +1,169 @@
+:global .container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+:global .container-fluid {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+:global .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+:global .column,
+:global .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+
+  /* Custom padding. */
+  padding-left: 0.417rem;
+  padding-right: 0.417rem;
+}
+
+/*
+ * Padding reset
+ * for row
+ */
+:global .nrow {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* for column */
+:global .ncol {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
+ * Container
+ * For devices larger than 544px
+*/
+@media (min-width: 544px) {
+  :global .container {
+    max-width: 576px;
+  }
+}
+
+/* For devices larger than 768px */
+@media (min-width: 768px) {
+  :global .container {
+    max-width: 720px;
+  }
+}
+
+/* For devices larger than 992px */
+@media (min-width: 992px) {
+  :global .container {
+    max-width: 940px;
+  }
+}
+
+/* For devices larger than 1200px */
+@media (min-width: 1200px) {
+  :global .container {
+    max-width: 1020px;
+  }
+}
+
+/* Columns */
+@media (min-width: 768px) {
+  :global .column,
+  :global .columns {
+    margin-left: 4%;
+  }
+
+  :global .column:first-child,
+  :global .columns:first-child {
+    margin-left: 0;
+  }
+
+  :global .one.column,
+  :global .one.columns { width: 4.66666666667%; }
+
+  :global .two.columns { width: 13.3333333333%; }
+  :global .three.columns { width: 22%; }
+  :global .four.columns { width: 30.6666666667%; }
+  :global .five.columns { width: 39.3333333333%; }
+  :global .six.columns { width: 48%; }
+  :global .seven.columns { width: 56.6666666667%; }
+  :global .eight.columns { width: 65.3333333333%; }
+  :global .nine.columns { width: 74%; }
+  :global .ten.columns { width: 82.6666666667%; }
+  :global .eleven.columns { width: 91.3333333333%; }
+
+  :global .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  :global .one-third.column { width: 30.6666666667%; }
+  :global .two-thirds.column { width: 65.3333333333%; }
+
+  :global .one-half.column { width: 48%; }
+
+  /* Offsets */
+  :global .offset-by-one.column,
+  :global .offset-by-one.columns { margin-left: 8.66666666667%; }
+
+  :global .offset-by-two.column,
+  :global .offset-by-two.columns { margin-left: 17.3333333333%; }
+
+  :global .offset-by-three.column,
+  :global .offset-by-three.columns { margin-left: 26%; }
+
+  :global .offset-by-four.column,
+  :global .offset-by-four.columns { margin-left: 34.6666666667%; }
+
+  :global .offset-by-five.column,
+  :global .offset-by-five.columns { margin-left: 43.3333333333%; }
+
+  :global .offset-by-six.column,
+  :global .offset-by-six.columns { margin-left: 52%; }
+
+  :global .offset-by-seven.column,
+  :global .offset-by-seven.columns { margin-left: 60.6666666667%; }
+
+  :global .offset-by-eight.column,
+  :global .offset-by-eight.columns { margin-left: 69.3333333333%; }
+
+  :global .offset-by-nine.column,
+  :global .offset-by-nine.columns { margin-left: 78%; }
+
+  :global .offset-by-ten.column,
+  :global .offset-by-ten.columns { margin-left: 86.6666666667%; }
+
+  :global .offset-by-eleven.column,
+  :global .offset-by-eleven.columns { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns { margin-left: 34.6666666667%; }
+
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns { margin-left: 52%; }
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+:global .container-fluid::after,
+:global .container::after,
+:global .row::after,
+:global .u-cf {
+  content: '';
+  display: table;
+  clear: both;
+}

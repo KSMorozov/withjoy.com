@@ -1,0 +1,34 @@
+.announcement {
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.5);
+  padding-bottom: 0;
+
+  & h1 {
+    color: #212121;
+    letter-spacing: -0.05rem;
+  }
+
+  & p {
+    text-align: center;
+    color: #616161;
+    opacity: 0.9;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.announcement-carousel-dots {
+  top: 0;
+  margin-top: -1.5rem;
+}
+
+@media (min-width: 768px) {
+  .announcement-carousel-dots {
+    margin-top: -1rem;
+  }
+}

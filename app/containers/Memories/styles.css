@@ -1,0 +1,119 @@
+.memories {
+  text-align: center;
+}
+
+.callout {
+  & h6 {
+    color: #424242;
+    text-transform: uppercase;
+  }
+
+  & h1 {
+    color: #212121;
+  }
+
+  & p {
+    text-align: center;
+    color: #616161;
+    opacity: 0.9;
+  }
+}
+
+.gallery-image {
+  max-width: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  .gallery-image {
+    width: 33.33333333%;
+    float: left;
+  }
+}
+
+.first-row .gallery-image:nth-child(1) {
+  background-image: url(https://withjoy.com/assets/img/joy-photos-capture.jpg);
+}
+
+.first-row .gallery-image:nth-child(2) {
+  background-image: url(https://withjoy.com/assets/img/joy-photos-photogrid.jpg);
+}
+
+.first-row .gallery-image:nth-child(3) {
+  background-image: url(https://withjoy.com/assets/img/joy-photos-guestbook.jpg);
+}
+
+.features {
+  padding: 20px 0;
+}
+
+.feature {
+  padding: 0 60px;
+  margin-bottom: 10px;
+  text-align: left;
+
+  & h6 {
+    text-transform: uppercase;
+  }
+
+  & h4 {
+    color: #212121;
+    font-weight: 300;
+  }
+
+  & p {
+    color: #616161;
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 992px) {
+  .features {
+    padding: 20px 0 50px;
+  }
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  font-weight: 400;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.call-to-action {
+  composes: button;
+  margin: 15px 0;
+  vertical-align: middle;
+  border-width: 2px;
+  border-radius: 40px;
+  padding-left: 36px;
+  padding-right: 36px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  background-color: #FF4081;
+  border-color: #FF4081;
+  color: #FAFAFA;
+}
+
+/* Hover animation */
+.call-to-action:hover {
+  background-color: #FF80AB;
+  border-color: #FF80AB;
+}

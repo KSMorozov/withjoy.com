@@ -1,0 +1,30 @@
+.people {
+  padding-top: 30px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.5);
+
+  & h6 {
+    color: #424242;
+    text-transform: uppercase;
+  }
+
+  & h1 {
+    color: #212121;
+  }
+
+  & p {
+    text-align: center;
+    color: #616161;
+    opacity: 0.9;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .people {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,31 @@
+/* Content Block Mobile */
+:global .block {
+  padding: 60px 30px;
+}
+
+:global .v-center {
+  display: flex;
+  align-items: center;
+}
+
+:global a,
+:global a p,
+:global button {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Content Block for devices larger than 768px */
+@media (min-width: 768px) {
+  :global .block {
+    padding: 90px 0;
+  }
+}
+
+::selection {
+  background-color: #F8BBD0;
+  color: #FAFAFA;
+}

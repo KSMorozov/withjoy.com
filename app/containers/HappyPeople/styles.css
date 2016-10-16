@@ -1,0 +1,77 @@
+.happy {
+  text-align: left;
+  background-color: rgba(252, 228, 236, 0.3);
+}
+
+.grid {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    width: 50%;
+  }
+}
+
+.picture {
+  composes: grid;
+  height: 450px;
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.story {
+  composes: grid;
+  max-height: 450px;
+
+  & h6 {
+    color: #424242;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    display: inline-block;
+    width: 100%;
+    color: #212121;
+  }
+
+  & p {
+    display: inline-block;
+    width: 100%;
+    color: #616161;
+    letter-spacing: 0.0125rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+}
+
+.avatars {
+  float: left;
+  background-color: rgba(252, 228, 236, 0.3);
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.avatars:first-of-type {
+  margin-left: 0;
+}
+
+.avatars:hover {
+  opacity: 1;
+}
